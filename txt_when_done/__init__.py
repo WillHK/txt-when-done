@@ -1,4 +1,4 @@
-from txt_when_done import txt_self, TxtWhenDoneMagics
+from .txt_when_done import txt_self, TxtWhenDoneMagics
 
 name="txt_when_done"
 

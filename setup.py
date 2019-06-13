@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='txt_when_done',
-    version='0.0.1',
+    version='0.0.5',
     packages=['txt_when_done'],
     url='https://github.com/willhk/txt-when-done',
     license='MIT',

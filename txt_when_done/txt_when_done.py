@@ -1,5 +1,6 @@
 from IPython.core import magic_arguments
-from IPython.core import line_magic, cell_magic, line_cell_magic, Magics, magics_class
+from IPython.core.magic import cell_magic, magics_class
+from IPython.core.magics import ExecutionMagics
 from twilio.rest import Client
 import time
 import os
@@ -38,8 +39,8 @@ def construct_time_mess(elapsed):
         time_mess += " {} seconds".format(seconds)
     return time_mess
 
-%magics_class
-class TxtWhenDoneMagics(Magics):
+@magics_class
+class TxtWhenDoneMagics(ExecutionMagics):
 
     def __init__(self, shell):
         super().__init__(shell)
