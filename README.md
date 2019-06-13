@@ -1,5 +1,5 @@
 # txt-when-done
-small service to send a text after ipython cell completes execution
+small jupyter magic command to send a text after ipython cell completes execution
 
 You must export these variables to your .bashrc or .zshrc (or whichever environment)
 
